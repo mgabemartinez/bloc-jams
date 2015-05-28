@@ -107,6 +107,29 @@ selling-points .point p {
   border-top: 1px solid rgba(255, 255,255, .4);
 }
 
+.collection-album-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.collection-album-container .caption {
+  margin-top: 10px;
+}
+
+.collection-album-container .caption p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.collection-album-container .caption p a {
+  color: white;
+}
+
+.collection-album-container img {
+  max-width: 100%;
+}
+
 
 
 

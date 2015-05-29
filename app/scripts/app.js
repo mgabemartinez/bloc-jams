@@ -1,4 +1,5 @@
 require("./landing");
+require("./collection");
 
 
 

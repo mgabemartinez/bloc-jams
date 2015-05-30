@@ -36,7 +36,7 @@ var updateCollectionView = function() {
   $(document).ready(function() {  
     updateCollectionView();
   });
-}
+};
 
 
 

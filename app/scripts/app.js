@@ -1,5 +1,7 @@
-require("./landing");
-require("./collection");
+require('./landing');
+require('./collection');
+require('./album');
+
 
 
 

@@ -140,7 +140,7 @@ selling-points .point p {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
   }
  
@@ -154,7 +154,7 @@ selling-points .point p {
 .collection-album-container .collection-overlay-button {
     font-size: 20px;
     background-color: white;
-    color: #d2287b;
+    color: #27D6E3;
     border-radius: 50% 50%;
     display: inline-block;
     width: 42px;
@@ -164,7 +164,7 @@ selling-points .point p {
 .collection-album-container .collection-overlay-button:hover {
    cursor: pointer;
    color: white;
-   background-color: #d2287b;
+   background-color: #27D6E3;
  }
  
  .collection-album-container .collection-overlay-button i {
@@ -175,8 +175,41 @@ selling-points .point p {
    padding-left: 5px;
  }
 
-
-
+.album-song-button {
+   padding-top: 6px;
+   text-align: center;
+   font-size: 14px;
+   background-color: white;
+   color: #d2287b;
+   border-radius: 50% 50%;
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+ }
+ 
+ .album-song-button:hover {
+   cursor: pointer;
+   color: white;
+   background-color: #d2287b;
+ }
+ 
+ .album-song-button i {
+   line-height: 28px;
+ }
+ 
+ .album-song-button .fa-play {
+   padding-left: 5px;
+ }
+ 
+ .album-song-listing td {
+   vertical-align: middle;
+ }
+ 
+ td.song-number {
+   padding: 0;
+   height: 70px;
+   text-align: center;
+ }
 
 
 

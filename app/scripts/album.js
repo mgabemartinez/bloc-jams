@@ -43,7 +43,6 @@
     return $(template);
  };
 
-
 var changeAlbumView = function(album) {
    // Update the album title
    var $albumTitle = $('.album-title');
@@ -70,8 +69,8 @@ var changeAlbumView = function(album) {
      var $newRow = createSongRow(i + 1, songData.name, songData.length);
      $songList.append($newRow);
    }
- 
  };
+
 
  // This 'if' condition is used to prevent the jQuery modifications
  // from happening on non-Album view pages.
@@ -79,8 +78,23 @@ var changeAlbumView = function(album) {
  if (document.URL.match(/\/album.html/)) {
     // Wait until the HTML is fully processed.
     $(document).ready(function() {
-     
-     changeAlbumView(albumPicasso);
+      changeAlbumView(albumPicasso);
+
+      $("#album-logo").click(function(){
+        console.log($('.album-artist').text());
+        if ($('.album-artist').text() === "Pablo Picasso"){
+          changeAlbumView(albumMarconi);
+        }
+        else {
+          changeAlbumView(albumPicasso);
+        }
+      })
+
+
+        
+    
+
   });
-}
+};
+
 

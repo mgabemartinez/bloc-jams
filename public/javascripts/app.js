@@ -344,7 +344,7 @@ $(document).ready(function() {
 
 var onHoverAction = function(event) {
   console.log('Hover action triggered.');
-  $(this).css('color', '#FB70FF');
+  $(this).css('color', '#eb5cb6');
   $(this).animate({'margin-top': '10px'}); 
 };
 

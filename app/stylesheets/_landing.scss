@@ -1,28 +1,52 @@
 .hero-content {
-  background: #292033;
+  
   padding: 100px 0;
+  background-image: url("../images/bloc-hero-image.jpg");
+  background-repeat: no-repeat;
+  min-height: 635px;
+
+  background-size: 100%;
+  
+
 }
 
 .hero-content h1 {
   font-size: 70px;
+  font-weight: bold;
+  color: white;
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px;
   margin-bottom: 50px;
   font-weight: 300;
 }
 
+hero-content h3 {
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px;
+}
+
 .selling-points {
-  padding: 100px 0;
+  padding: 11px 0;
+  
 }
 
 .selling-points .point {
   width: 32%;
+  height: 210px;
   float: left;
-  padding: 0 0.5%;
+  padding: 2%;
+  background-color: #eb5cb6;
+  text-align: center;
+  margin: 0.5%;
+
 }
 
 .selling-points .point h5 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  
   text-align: center;
   height: 85px;
 }

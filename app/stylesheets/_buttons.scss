@@ -1,0 +1,32 @@
+$hot-pink: #eb5cb6;
+
+.default-button {
+
+  background-color: $hot-pink;
+  color: white;
+  font-weight: 300;
+
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none;
+
+
+
+  &:hover {
+    background-color: white;
+    color: $hot-pink;
+  }
+
+  &:active {
+    background-color: #9B1D64;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #B3B3B3;
+    cursor: not-allowed;
+  }
+
+}

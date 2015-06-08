@@ -229,6 +229,16 @@ var updateSeekPercentage = function($seekBar, event) {
 }
 
 
+// Update thumb and fill positions on seekBar
+
+// get xPosition of event
+// subtract space left of seekBar from xPosition for seekXPosition
+// divide seekXPosition by total seekBar width
+// Multiple by 100 add % to get percent on seekBar clicked for percentLocation
+// move thumb position to percentLocation
+// fill width equal to percentLocation
+
+
  var setupSeekBars = function() {
  
    $seekBars = $('.player-bar .seek-bar');
@@ -289,6 +299,7 @@ var updateSeekPercentage = function($seekBar, event) {
 require('./landing');
 require('./collection');
 require('./album');
+require("./profile");
 
 
 
@@ -380,7 +391,7 @@ var updateCollectionView = function() {
 
 ;require.register("scripts/landing", function(exports, require, module) {
 $(document).ready(function() {
-  $('.hero-content h3').click(function() {
+  $('.hero-content h2').click(function() {
     var subText = $(this).text();
     $(this).text(subText + "!");
     $(this).fadeOut( "slow" );
@@ -388,12 +399,14 @@ $(document).ready(function() {
 
 var onHoverAction = function(event) {
   console.log('Hover action triggered.');
-  $(this).css('color', '#eb5cb6');
+  $(this).css('color', '#41384D');
+  $(this).css('background-color', 'white');
   $(this).animate({'margin-top': '10px'}); 
 };
 
 var offHoverAction = function(event) {
   $(this).css('color', '#FFFFFF');
+  $(this).css('background-color', '#eb5cb6');
   $(this).animate({'margin-top': '0px'});
 };
   console.log('Hover action triggered.');
@@ -403,6 +416,30 @@ $('.selling-points .point').hover(onHoverAction, offHoverAction);
 
 
 
+});
+
+;require.register("scripts/profile", function(exports, require, module) {
+//holds the name of our tab button container for selection later in the function
+
+var tabsContainer = ".user-profile-tabs-container"
+var selectTabHandler = function(event) {
+  $tab = $(this);
+  $(tabsContainer + " li").removeClass('active');
+  $tab.parent().addClass('active');
+  selectedTabName = $tab.attr('href');
+  console.log(selectedTabName);
+  $(".tab-pane").addClass('hidden');
+  $(selectedTabName).removeClass('hidden');
+  event.preventDefault();
+};
+
+ if (document.URL.match(/\/profile.html/)) {
+   $(document).ready(function() {
+     var $tabs = $(tabsContainer + " a");
+     $tabs.click(selectTabHandler);
+     $tabs[0].click();
+   });
+ }
 });
 
 ;

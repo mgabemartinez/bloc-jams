@@ -40,24 +40,23 @@
   font-weight: 300;
 }
 
-// Override the defaults that Bottstrap sets.
+// Override the defaults that Bootstrap sets.
 .table.album-song-listing td {
-  padding: 30px;
+  padding: 20px;
   border-top: 1px solid rgba(255, 255,255, .4);
 }
 
 
 
 .album-song-button {
-   padding-top: 6px;
    text-align: center;
    font-size: 14px;
    background-color: white;
    color: #eb5cb6;
    border-radius: 50% 50%;
    display: inline-block;
-   width: 40px;
-   height: 40px;
+   width: 29px;
+   height: 29px;
  }
  
  .album-song-button:hover {

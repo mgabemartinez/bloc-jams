@@ -1,24 +1,40 @@
 .hero-content {
-  background: #292033;
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-image: url("../images/bloc-hero-image.jpg");
+  background-repeat: no-repeat;
+  min-height: 635px;
+  background-size: 100%; }
 
 .hero-content h1 {
   font-size: 70px;
+  font-weight: bold;
+  color: white;
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px;
   margin-bottom: 50px;
   font-weight: 300; }
 
+hero-content h3 {
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px; }
+
 .selling-points {
-  padding: 100px 0; }
+  padding: 11px 0; }
 
 .selling-points .point {
   width: 32%;
+  height: 210px;
   float: left;
-  padding: 0 0.5%; }
+  padding: 2%;
+  background-color: #eb5cb6;
+  text-align: center;
+  margin: 0.5%; }
 
 .selling-points .point h5 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
   text-align: center;
   height: 85px; }
 
@@ -52,19 +68,18 @@ selling-points .point p {
   font-weight: 300; }
 
 .table.album-song-listing td {
-  padding: 30px;
+  padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
 .album-song-button {
-  padding-top: 6px;
   text-align: center;
   font-size: 14px;
   background-color: white;
   color: #eb5cb6;
   border-radius: 50% 50%;
   display: inline-block;
-  width: 40px;
-  height: 40px; }
+  width: 29px;
+  height: 29px; }
 
 .album-song-button:hover {
   cursor: pointer;
@@ -253,6 +268,85 @@ td.song-number {
     margin-top: -10px;
     margin-left: -10px; }
 
+.default-button {
+  background-color: #eb5cb6;
+  color: white;
+  font-weight: 300;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none; }
+  .default-button:hover {
+    background-color: white;
+    color: #eb5cb6; }
+  .default-button:active {
+    background-color: #9b1d64;
+    outline: none; }
+  .default-button:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed; }
+
+.user-profile-header {
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+.user-image-container {
+  display: inline-block; }
+
++ .tab-content.user-subscription .well {
+  background: transparent;
+  border: #eb5cb6 1.5px solid; }
++ .tab-content.user-subscription + .subsection-label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 100; }
++ .tab-content.user-subscription .table.credit-card-list td {
+  border-top-color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 16px; }
++ .tab-content.user-subscription .fa-minus-circle {
+  color: #eb5cb6; }
+
+.user-profile-tabs-container {
+  margin: 42px auto 20px;
+  text-align: center; }
+  .user-profile-tabs-container .pagination.profile-pagination {
+    font-weight: 400;
+    border: #eb5cb6 1px solid;
+    border-radius: 0px; }
+    .user-profile-tabs-container .pagination.profile-pagination > li > a {
+      border: none;
+      background-color: transparent;
+      color: white;
+      letter-spacing: 2px;
+      border-radius: 0px; }
+      .user-profile-tabs-container .pagination.profile-pagination > li > a:hover {
+        background-color: white;
+        color: #eb5cb6; }
+    .user-profile-tabs-container .pagination.profile-pagination > .active > a {
+      background-color: #eb5cb6; }
+
+.default-form label {
+  font-weight: 100;
+  font-size: 16px; }
+.default-form input {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0px;
+  border: none;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 23px 10px; }
+
+.no-left-gutter {
+  padding-left: 0px; }
+
+.no-right-gutter {
+  padding-right: 0px; }
+
 html {
   height: 100%; }
 
@@ -273,6 +367,11 @@ body.landing .navbar {
 
 .player-header-nav {
   background-color: #685480; }
+
+h2 {
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px; }
 
 
 /*# sourceMappingURL=app.css.map*/

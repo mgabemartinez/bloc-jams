@@ -136,6 +136,16 @@ var updateSeekPercentage = function($seekBar, event) {
 }
 
 
+// Update thumb and fill positions on seekBar
+
+// get xPosition of event
+// subtract space left of seekBar from xPosition for seekXPosition
+// divide seekXPosition by total seekBar width
+// Multiple by 100 add % to get percent on seekBar clicked for percentLocation
+// move thumb position to percentLocation
+// fill width equal to percentLocation
+
+
  var setupSeekBars = function() {
  
    $seekBars = $('.player-bar .seek-bar');

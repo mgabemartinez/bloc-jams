@@ -1,7 +1,10 @@
-@import "landing";
+  @import "landing";
   @import "album";
   @import "collection";
   @import "player_bar";
+  @import "buttons";
+  @import "profile";
+  
 
 html {
   height: 100%;
@@ -27,6 +30,12 @@ body.landing .navbar {
 
 .player-header-nav {
   background-color: #685480;
+}
+
+h2 {
+  background-color: #eb5cb6;
+  width: 350px;
+  padding: 20px;
 }
 
 // medium-purple: #7B46A3 - 123, 70, 163

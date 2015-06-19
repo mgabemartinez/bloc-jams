@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html ng-app="BlocJams">
   <head>
     <title>Bloc Jams</title>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
     <script src="/javascripts/vendor.js"></script>
     <script src="/javascripts/app.js"></script>
     <script>
@@ -14,6 +16,7 @@
     </script>
   </head>
   <body class='landing'>
+    <body ng-controller='Landing.controller' class='landing'>
       <nav class="player-header-nav navbar">
         <div class="container">
           <div class='navbar-header'> <!-- Nav Bar -->
@@ -25,10 +28,10 @@
       </nav>
 
       <div class='hero-content'> <!-- Hero content -->
-        <div class='container'>
+        <div class='container'> 
           <h1> Bloc Jams </h1>
           <h2> Turn the music up! </h2>
-          <h3>  <!--Turn the music up! --></h3>
+          <h3 ng-Click="subTextClicked()"> {{ subText }}</h3>
         </div>
       </div>
 
@@ -49,5 +52,13 @@
         </div>
       </div>
 
+
+      <div class="landing-album-list container">
+        <div class="row">
+          <div class="col-md-4" ng-repeat="albumURL in albumURLs">
+            <img ng-src="{{ albumURL }}">
+          </div>
+        </div>
+      </div>
   </body> 
 </html>
